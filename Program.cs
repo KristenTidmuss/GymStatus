@@ -1,7 +1,5 @@
 ﻿using Discord;
 using Discord.Commands;
-using Discord.Rest;
-using Newtonsoft.Json.Linq;
 using Discord.WebSocket;
 //Branch for Nottingham Sherwood: 8a2d9772-268f-4d62-8291-f7bb28f10302
 namespace GymStatus
