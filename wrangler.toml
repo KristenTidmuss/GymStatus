@@ -1,0 +1,15 @@
+name = "gymstatus"
+type = "javascript"
+
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2022-02-06"
+
+kv_namespaces = [
+    { binding = "SETTING", id = "200ddffd822c4d41bdf9aa4682de274a", preview_id = "200ddffd822c4d41bdf9aa4682de274a" }
+]
+
+[triggers]
+crons = ["*/5 * * * *"]
