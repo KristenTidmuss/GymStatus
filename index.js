@@ -43,11 +43,12 @@ async function handleRequest() {
       "content-type": "application/json;charset=UTF-8",
     },
   }
-  const webhooksend = await fetch(webhook, init)
-  const webhookresponse = await webhooksend.json()
-  return new Response(JSON.stringify(webhookresponse))
+  await fetch(webhook, init)
+  return new Response('')
 }
-
+addEventListener("scheduled", event => {
+  event.waitUntil(handleRequest())
+})
 addEventListener("fetch", event => {
   return event.respondWith(handleRequest())
 })
